@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="iconfinder_user.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col l7">
+                    <h1 class="caption__site center-align">Our project</h1>
+                </div>
+                <div class="col l3">
+                    <button class="modal__show waves-effect waves-light btn-large" data-modal="#sign__up"><i class="material-icons right">add_box</i>Signup</button>
+                </div>
+                <div class="col l2">
+                    <button class="modal__show waves-effect waves-light btn-large" data-modal="#log__in"><i class="material-icons right">add_box</i>Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal__wrap hide" id="sign__up">
+        <div class="modal__project sign_up_modal">
+            <div class="form_slider_wrapper">
+            <div class="modal__slider">
+                <div class="left__block">
+                    <form>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Your name" id="signup__name" type="text" class="validate" pattern="[A-Za-z]{4,12}">
+                                <label for="signup__name">Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Your password" id="signup__pass" type="password" pattern="[A-Za-z]{4,12}">
+                                <label for="signup__pass">Password</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Repeat password" id="signup__pass2" type="password" pattern="[A-Za-z]{4,12}">
+                                <label for="signup__pass2">Password repeat</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Your email" id="signup__email" type="email" class="validate">
+                                <label for="signup__email">Email</label>
+                            </div>
+                            <div class="input-field col l6">
+                                <input  id="signup__birthday" type="text" class="datepicker">
+                                <label class="active" for="signup__birthday">Birthday</label>
+                            </div>
+                            <div class="col l6">
+                                <p>
+                                    <label>
+                                       <input name="sex" value="male" type="radio" class="sex"checked />
+                                       <span>male</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                       <input name="sex" value="female" type="radio" class="sex" />
+                                       <span>female</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input class="sex" value="other" name="sex" type="radio"  />
+                                        <span>other</span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="col l6">
+                                <p class="">
+                                    <label>
+                                        <input type="checkbox" id="agree__rules" class="filled-in"/>
+                                        <span>Filled in</span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="col l6">    
+                                <p class="read__rules">(read rules)</p>
+                            </div>
+                            <div class="col l12">
+                                <button id="signup__submit" class="waves-effect waves-light btn-large disabled right"><i class="material-icons right">input</i>Send </button>
+                            </div>
+                        </div>
+                        <button class="modal_project_close btn-floating waves-effect waves-light #1e88e5 blue darken-1"><i class="material-icons right">clear</i></button>
+                    </form>
+                </div>
+                <div class="right__block">
+                    <p class="read__rules__back"> <img src="4315.png_860.png" alt="back">back</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p class="read__rules__back"> <img src="4315.png_860.png" alt="back">back</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal__wrap hide" id="log__in">
+        <div class="modal__project">
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Your email" id="login__email" type="email" class="validate">
+                        <label for="login__email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input placeholder="Your password" id="login__pass" type="password">
+                        <label for="login__pass">Password</label>
+                    </div>
+                    <div class="col l12 center-align">
+                        <button id="login__submit" class="waves-effect waves-light btn-large"><i class="material-icons right">add_box</i>Login</button>
+                    </div>
+                </div>
+            </form>
+            <button class="modal_project_close btn-floating waves-effect waves-light #1e88e5 blue darken-1"><i class="material-icons right">clear</i></button>
+        </div>
+    </div>
+    
+    <script src="script/js/materialize.min.js"></script>
+    <script src="script/ajax.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/form.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
